@@ -1,0 +1,13 @@
+.countries {
+	max-width: var(--maxWidth);
+	margin: 0 auto 5rem auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 5rem;
+}
+
+@media screen and (max-width: 1360px) {
+	.countries {
+		padding: 0 2rem;
+	}
+}
