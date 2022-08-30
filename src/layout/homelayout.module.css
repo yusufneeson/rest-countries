@@ -1,0 +1,30 @@
+.header {
+	padding: 2.5rem 0;
+	background-color: var(--elements);
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 128rem;
+	margin: 0 auto;
+	color: var(--text);
+}
+.switcher {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 600;
+	font-size: 1.5rem;
+	gap: 1rem;
+	cursor: pointer;
+}
+.icon {
+	width: 2rem;
+	height: 2rem;
+}
+@media screen and (max-width: 1360px) {
+	.header {
+		padding: 2.5rem 2rem;
+	}
+}
