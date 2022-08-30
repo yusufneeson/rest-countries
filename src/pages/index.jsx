@@ -1,9 +1,10 @@
+import Filter from "../components/Filter/Filter";
 import HomeLayout from "../layout/HomeLayout";
 
-export default function Index() {
+export default function Index({ countries }) {
 	return (
 		<HomeLayout>
-			<h1></h1>
+			<Filter />
 		</HomeLayout>
 	);
 }
