@@ -3,6 +3,7 @@ import { ThemeProvider } from "next-themes";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import nProgress from "nprogress";
+import { FilterProvider } from "../context/filter.context";
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter();
@@ -21,7 +22,9 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<ThemeProvider attribute="class" defaultTheme="light">
-			<Component {...pageProps} />
+			<FilterProvider>
+				<Component {...pageProps} />
+			</FilterProvider>
 		</ThemeProvider>
 	);
 }
