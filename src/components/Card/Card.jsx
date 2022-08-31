@@ -15,6 +15,7 @@ function Card({ ...props }) {
 						height={160}
 						layout="responsive"
 						objectFit="cover"
+						priority
 					/>
 					<div className={style.body}>
 						<h3 className={style.title}>{country.name}</h3>
