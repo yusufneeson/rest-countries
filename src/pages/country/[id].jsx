@@ -3,7 +3,7 @@ import HomeLayout from "../../layout/HomeLayout";
 
 function Country({ country, borders }) {
 	return (
-		<HomeLayout>
+		<HomeLayout title={`Country of ${country.name}`}>
 			<Container country={country} borders={borders} />
 		</HomeLayout>
 	);

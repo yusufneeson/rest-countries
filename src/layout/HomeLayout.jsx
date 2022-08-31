@@ -7,7 +7,7 @@ import Sun from "../components/icons/SUn";
 import style from "./homelayout.module.css";
 
 function HomeLayout(props) {
-	const { title = "", children } = props;
+	const { title, children } = props;
 	const { theme, setTheme } = useTheme();
 	const [mounted, setMounted] = useState(false);
 	useEffect(() => setMounted(true), []);
@@ -15,7 +15,9 @@ function HomeLayout(props) {
 	return (
 		<>
 			<Head>
-				<title>Next.js Countries</title>
+				<title>{`${
+					title ? `${title} | ` : ""
+				}Next.js Countries`}</title>
 				<meta
 					name="description"
 					content="List all countries using REST API with Next.js by Yusuf Neeson"
