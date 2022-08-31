@@ -1,17 +1,19 @@
 import style from "./container.module.css";
 import Link from "next/link";
 import ArrowLeft from "../icons/ArrowLeft";
+import Details from "../Details/Details";
+import { useRouter } from "next/router";
 
-function Container() {
+function Container({ country, borders }) {
+	const router = useRouter();
 	return (
 		<section className={style.container}>
 			<div className={style.container__back}>
-				<Link href="/">
-					<a className={style.back}>
-						<ArrowLeft className={style.arrow} /> Back
-					</a>
-				</Link>
+				<a className={style.back} onClick={() => router.back()}>
+					<ArrowLeft className={style.arrow} /> Back
+				</a>
 			</div>
+			<Details country={country} borders={borders} />
 		</section>
 	);
 }
