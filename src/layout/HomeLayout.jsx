@@ -2,6 +2,7 @@ import { useTheme } from "next-themes";
 import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import About from "../components/About/About";
 import Moon from "../components/icons/Moon";
 import Sun from "../components/icons/SUn";
 import style from "./homelayout.module.css";
@@ -55,6 +56,9 @@ function HomeLayout(props) {
 				</nav>
 			</header>
 			<main>{children}</main>
+			<footer>
+				<About />
+			</footer>
 		</>
 	);
 }
