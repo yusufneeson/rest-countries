@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import About from "../components/About/About";
 import Moon from "../components/icons/Moon";
-import Sun from "../components/icons/SUn";
+import Sun from "../components/icons/Sun";
 import style from "./homelayout.module.css";
 
 function HomeLayout(props) {
