@@ -1,4 +1,4 @@
-<center>
+<div align="center">
 
 | ![preview-desktop.png](./.preview/desktop.png) |
 | :--------------------------------------------: |
@@ -12,11 +12,7 @@
 
 ### [Live](https://next-countries-yusuf.vercel.app) | [Solution](https://www.frontendmentor.io/solutions/rest-countries-api-with-nextjs-7qqMMjMadq) | [Challenge](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca)
 
-<br>
-<br>
-<br>
-
-</center>
+</div>
 
 ## About This Project
 
